@@ -37,3 +37,5 @@ asyncpg>=0.20.0
 
 packaging
 aiofiles
+
+"nonebot-plugin-parser[ytdlp,emosvg]"
