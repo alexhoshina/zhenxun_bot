@@ -4,7 +4,14 @@ LABEL "language"="python"
 
 WORKDIR /src
 
-RUN apt update && apt install -y net-tools mawk
+RUN apt update && apt install -y \
+    net-tools \
+    mawk \
+    libcairo2 \
+    libpango-1.0-0 \
+    libpangocairo-1.0-0 \
+    libgdk-pixbuf-2.0-0 \
+    && rm -rf /var/lib/apt/lists/*
 
 ENV HOST=0.0.0.0
 ENV DB_URL="sqlite:data/db/zhenxun.db"
