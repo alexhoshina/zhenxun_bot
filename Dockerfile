@@ -4,7 +4,7 @@ LABEL "language"="python"
 
 WORKDIR /src
 
-RUN apt update && apt install -y net-tools awk
+RUN apt update && apt install -y net-tools mawk
 
 ENV HOST=0.0.0.0
 ENV DB_URL="sqlite:data/db/zhenxun.db"
