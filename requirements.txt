@@ -37,4 +37,4 @@ asyncpg>=0.20.0
 
 packaging
 
-nonebot-plugin-parser[ytdlp,emosvg]
+nonebot-plugin-parser[ytdlp,emosvg]>=2.3.5
