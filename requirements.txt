@@ -34,3 +34,6 @@ alibabacloud-devops20210625>=5.0.2,<6.0.0
 json_repair>=0.54.0,<0.55.0
 redis>=5
 asyncpg>=0.20.0
+
+packaging
+aiofiles
