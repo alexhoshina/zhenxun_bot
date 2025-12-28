@@ -1,3 +1,4 @@
+from encodings.punycode import T
 from pathlib import Path
 
 from nonebot import require, get_driver, get_plugin_config
@@ -24,7 +25,7 @@ class Config(BaseModel):
     """代理"""
     parser_need_upload: bool = False
     """是否需要上传音频文件"""
-    parser_use_base64: bool = False
+    parser_use_base64: bool = True
     """是否使用 base64 编码发送图片，音频，视频"""
     parser_max_size: int = 90
     """资源最大大小 默认 100 单位 MB"""
