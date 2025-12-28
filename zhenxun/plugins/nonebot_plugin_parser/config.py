@@ -27,9 +27,9 @@ class Config(BaseModel):
     """是否需要上传音频文件"""
     parser_use_base64: bool = True
     """是否使用 base64 编码发送图片，音频，视频"""
-    parser_max_size: int = 90
+    parser_max_size: int = 10
     """资源最大大小 默认 100 单位 MB"""
-    parser_duration_maximum: int = 480
+    parser_duration_maximum: int = 0
     """视频/音频最大时长"""
     parser_append_url: bool = False
     """是否在解析结果中附加原始URL"""
@@ -47,7 +47,7 @@ class Config(BaseModel):
     """Renderer 类型"""
     parser_custom_font: str | None = None
     """自定义字体"""
-    parser_need_forward_contents: bool = True
+    parser_need_forward_contents: bool = False
     """是否需要转发媒体内容"""
     parser_emoji_cdn: str = ELK_SH_CDN
     """Pilmoji 表情 CDN"""
